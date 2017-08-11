@@ -1,4 +1,9 @@
-#include <bits/stdc++.h>
+#include <cstdio>
+#include <vector>
+#include <string>
+#include <cassert>
+#include <cstring>
+#include <readline/readline.h>
 using namespace std;
 
 using VS = vector <string>;
@@ -6,7 +11,6 @@ using VS = vector <string>;
 int const MAX_LEN = 512;
 int cnt;
 
-char s[MAX_LEN];
 VS f[MAX_LEN][MAX_LEN];      // f[i][j] - all solutions s.t. s[i..j] evals to false
 VS t[MAX_LEN][MAX_LEN];      // t[i][j] - all solutions s.t. t[i..j] evals to true
 
@@ -76,8 +80,7 @@ int main() {
     printf("must provide a valid boolean expression\n");
     printf("press c-c to quit\n\n");
     while (true) {
-        printf("> ");
-        scanf("%s", s);
+        char *s = readline("> ");
         int len = strlen(s);
         gao(s, len);
         if (t[0][len-1].empty()) printf("there is no way to make %s true!\n", s);
