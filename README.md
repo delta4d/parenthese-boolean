@@ -1,9 +1,9 @@
-# Bool
+## Parenthese Boolean
 
 Add parenthese to a boolean expression to make it evaluate ot `true`.
 
 
-# Usage
+## Usage
 
     $ make
     $ ./bool
@@ -17,6 +17,6 @@ Add parenthese to a boolean expression to make it evaluate ot `true`.
 :warning: _can not handle large strings._
 
 
-# Algorithm
+## Algorithm
 
 Dynamic Programming.
