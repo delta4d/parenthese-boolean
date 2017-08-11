@@ -9,7 +9,6 @@ using namespace std;
 using VS = vector <string>;
 
 int const MAX_LEN = 512;
-int cnt;
 
 VS f[MAX_LEN][MAX_LEN];      // f[i][j] - all solutions s.t. s[i..j] evals to false
 VS t[MAX_LEN][MAX_LEN];      // t[i][j] - all solutions s.t. t[i..j] evals to true
