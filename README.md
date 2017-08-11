@@ -14,11 +14,9 @@ Add parenthese to a boolean expression to make it evaluate ot `true`.
     (T&F)|T
 
 
-you can try more on your own.
-
-_warning!  can not handle large strings._
+:warning: _can not handle large strings._
 
 
 # Algorithm
 
-Memorized Search.
+Dynamic Programming.
